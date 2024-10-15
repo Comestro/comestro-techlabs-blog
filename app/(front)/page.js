@@ -1,9 +1,12 @@
 // https://www.programiz.com/
 import React from 'react'
+import Main from './components/Main'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+        <Main/>
+    </div>
   )
 }
 
