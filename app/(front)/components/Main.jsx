@@ -3,6 +3,7 @@ import Header from './Header'
 import ComPro from './ComPro'
 import HeroSection from './HeroSection'
 import Courses from './Courses'
+import Footer from './Footer'
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
         </div>
         <HeroSection/>
         <Courses/>
+        <Footer/>
     </div>
   )
 }

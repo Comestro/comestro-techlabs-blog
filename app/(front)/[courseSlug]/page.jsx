@@ -1,2 +1,9 @@
-// course view page
-// https://www.programiz.com/python-programming
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>page</div>
+  )
+}
+
+export default page
