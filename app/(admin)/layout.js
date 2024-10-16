@@ -1,5 +1,6 @@
 import AdminNavbar from "./components/admin-navbar"
 import "../(front)/globals.css";
+import Sidebar from "./components/sidebar";
 
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <div className="flex flex-1  flex-col">
           <AdminNavbar />
           <div className="w-4/12">
+          <Sidebar/>
           </div>
           <div className="w-8/12">
             {children}
