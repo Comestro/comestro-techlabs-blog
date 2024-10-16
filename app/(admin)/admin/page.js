@@ -3,7 +3,7 @@ import Card from './_components/card'
 
 const page = () => {
   return (
-    <div className='p-10 grid grid-cols-4'>
+    <div className='p-10 grid grid-cols-4 gap-5'>
         <Card/>
         <Card/>
         <Card/>
