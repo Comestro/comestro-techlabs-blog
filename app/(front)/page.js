@@ -1,4 +1,3 @@
-// https://www.programiz.com/
 import React from 'react'
 import Main from './components/Main'
 
