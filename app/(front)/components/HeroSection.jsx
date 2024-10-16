@@ -18,7 +18,7 @@ const HeroSection = () => {
         </p>
         <h2 className="font-semibold text-slate-600 mt-10 text-xl font-sans">Get the latest tutorials and updates</h2>
         <div className="flex  border rounded w-fit">
-            <input type="text" placeholder="Enter your email address" className="px-3 text-gray-400 py-2 font-sans text-lg" />
+            <input type="text" placeholder="Enter your email address" className="px-3 w-full outline-none focus:outline-none text-gray-400 py-2 font-sans text-lg" />
             <button className="bg-blue-600 text-white h-fit p-3 font-semibold ml-10 cursor-pointer hover:bg-blue-800 rounded-r">Subscribe</button>
         </div> 
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className="flex flex-1 flex-col bg-[#16224b] text-white px-[120px] py-[80px] font-serif">
+        <div className="flex flex-1 flex-col bg-[#16224b] text-white px-[120px] py-[80px] font-sans">
             <div className="flex flex-1 justify-between">
                 <div className='flex flex-col gap-4 '>
                     <img src="./mainLogo2.png" alt="" className='cursor-pointer w-[25vh]' />

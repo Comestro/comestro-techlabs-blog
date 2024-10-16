@@ -3,9 +3,13 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div className='bg-slate-200 w-3/12'>
-      <Link rel="stylesheet" href="" >
-      </Link>
+    <div className='bg-slate-200  h-screen flex-col flex items-start p-4'>
+      <Link rel="stylesheet" href="" className='flex items-center px-10 py-3  hover:bg-white transition justify-between"'> Dashboard</Link>
+      <Link rel="stylesheet" href="/admin/course"  className='flex items-center px-10 py-3  hover:bg-white transition justify-between'> manage course</Link>
+      <Link rel="stylesheet" href="/admin/course/course-create" className='flex items-center px-10 py-3  hover:bg-white transition justify-between' > insert course</Link>
+      <Link rel="stylesheet" href="" className='flex items-center px-10 py-3  hover:bg-white transition justify-between'> manage chapter</Link>
+      <Link rel="stylesheet" href="" className='flex items-center px-10 py-3  hover:bg-white transition justify-between' >insert chapter</Link>
+      <Link rel="stylesheet" href="" className='flex items-center px-10 py-3  hover:bg-white transition justify-between' ></Link>
 
     </div>
   )
