@@ -2,6 +2,7 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import { FaAngleDown } from "react-icons/fa6";
 import Learn from "../learn_path/Learn";
 import { Practices } from "../learn_path/Practices";
 // import Link from "next/link";
@@ -21,10 +22,9 @@ const Header = () => {
 
         {/* <!-- Modal toggle --> */}
         <span><IoMenu className="size-8 block lg:hidden" /> </span>
-        <button data-modal-target="static-modal" data-modal-toggle="static-modal" className="block  hover:text-blue-500 cursor-pointer text-gray-500  px-5 py-2.5 text-center " type="button">
-          <select className="hover:text-blue-500 text-purple-600 cursor-pointer">
-            <option value="Courses">Courses</option>
-          </select>
+        <button data-modal-target="static-modal" data-modal-toggle="static-modal" className="block hover:text-blue-500 text-purple-600 cursor-pointer px-5 py-2.5 text-center " type="button">
+          
+         <span className="flex items-center gap-2"> Courses <FaAngleDown /></span>
         </button>
 
 
