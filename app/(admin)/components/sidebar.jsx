@@ -45,9 +45,14 @@ const Sidebar = () => {
       </Link>
       <Link
         rel="stylesheet"
-        href=""
+        href="/admin/lesson"
         className="flex items-center px-10 py-3  hover:bg-white transition justify-between"
-      ></Link>
+      >Manage Lesson</Link>
+      <Link
+        rel="stylesheet"
+        href="/admin/lesson/lesson-create"
+        className="flex items-center px-10 py-3  hover:bg-white transition justify-between"
+      >Insert Lesson</Link>
     </div>
   );
 }
