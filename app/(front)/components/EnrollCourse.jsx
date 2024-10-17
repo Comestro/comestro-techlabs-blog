@@ -1,4 +1,6 @@
 import { FaCircle } from "react-icons/fa";
+import { IoMdArrowRoundForward } from "react-icons/io";
+
 
 const EnrollCourse = () => {
   return (
@@ -26,9 +28,32 @@ const EnrollCourse = () => {
       </div>
       <img src="crousel2.png" alt="crousel2" className="border-8 border-black rounded-2xl"/>
       </div>
-      <div className="flex gap-5">
-        <div className="flex flex-col gap-5">
+      <div className="flex  p-2 gap-5">
+        <div className="flex flex-col w-3/12 gap-5">
             <h2 className="text-blue-950 font-bold text-3xl font-sans">Enroll now <br /> for FREE</h2>
+            <p className="font-sans text-lg ">Try our courses for <br /> FREE now! Start from <br /> our  most popular <br /> courses.</p>
+        </div>
+        <div className="grid grid-cols-5  gap-5">
+            <div className="bg-white px-3 pt-4 rounded shadow-lg hover:scale-105 transition border gap-3 flex flex-col">
+              <h2 className=" font-bold text-lg text-blue-950">Interactive <br />python course</h2>
+              <img src="pythonCourse.png" alt="" />
+            </div>
+            <div className="bg-white px-3 pt-4 rounded shadow-lg hover:scale-105 transition border gap-3 flex flex-col">
+              <h2 className=" font-bold text-lg text-blue-950">Interactive <br />C Course</h2>
+              <img src="c-programming.png" alt="" />
+            </div>
+            <div className="bg-white px-3 pt-4 rounded shadow-lg hover:scale-105 transition border gap-3 flex flex-col">
+              <h2 className=" font-bold text-lg text-blue-950">Interactive <br />Java course</h2>
+              <img src="java.png" alt="" />
+            </div>
+            <div className="bg-white px-3 pt-4 rounded shadow-lg hover:scale-105 transition border gap-3 flex flex-col">
+              <h2 className=" font-bold text-lg text-blue-950">Interactive <br />C++ course</h2>
+              <img src="cpp.png" alt="" />
+            </div>
+            <div className="bg-white px-3 pt-4 rounded shadow-lg hover:scale-105 transition border gap-3 justify-center items-center flex flex-col">
+              <h2 className=" font-bold text-lg text-blue-500">View all <br />courses</h2>
+              <IoMdArrowRoundForward className="text-xl text-blue-500" />
+            </div>
         </div>
       </div>
     </div>
