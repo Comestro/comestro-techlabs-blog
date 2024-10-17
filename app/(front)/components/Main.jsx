@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from './Header'
+
 import ComPro from './ComPro'
 import HeroSection from './HeroSection'
 import Courses from './Courses'
 import Footer from './Footer'
+import Header from './Header'
 
 const Main = () => {
   return (
