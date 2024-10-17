@@ -7,7 +7,7 @@ import { Practices } from "../learn_path/Practices";
 // import Link from "next/link";
 const Header = () => {
   return (
-    <div className="flex flex-1 gap-3 lg:gap-6 px-20  bg-white lg:justify-evenly py-2 justify-start items-center shadow-md">
+    <div className="flex flex-1 gap-3 lg:gap-6 px-20 bg-white lg:justify-evenly py-2 justify-start items-center shadow-md">
       {/* <h1 className='font-bold text-2xl text-blue-800 font-sans'>Comestro- <span className='text-red-400'>techlabs</span></h1> */}
       <img
         src="mainLogo2.png"

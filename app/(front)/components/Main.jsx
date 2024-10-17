@@ -5,6 +5,7 @@ import HeroSection from './HeroSection'
 import Courses from './Courses'
 import Footer from './Footer'
 import Header from './Header'
+import EnrollCourse from './EnrollCourse'
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
         </div>
         <HeroSection/>
         <Courses/>
+        <EnrollCourse/>
         <Footer/>
     </div>
   )
