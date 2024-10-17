@@ -1,6 +1,10 @@
+
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import Learn from "../learn_path/Learn";
+import { Practices } from "../learn_path/Practices";
+// import Link from "next/link";
 const Header = () => {
   return (
     <div className="flex flex-1 gap-3 lg:gap-6 px-20  bg-white lg:justify-evenly py-2 justify-start items-center shadow-md">
@@ -10,66 +14,73 @@ const Header = () => {
         alt="logo"
         className="h-10 w-36 hidden  lg:block "
       />
-      <IoMenu className="size-8 block lg:hidden" />
+      {/* <IoMenu className="size-8 block lg:hidden" /> */}
       <div className="flex gap-5 font-sans font-semibold ">
-        {/* <select className="hover:text-blue-500 text-purple-600 cursor-pointer">
-          <option value="Courses">Courses</option>
-        </select> */}
-    {/* ------------------------------------------------------------------ */}
 
-{/* <!-- Modal toggle --> */}
-{/* <span><IoMenu className="size-8 block lg:hidden" /> </span> */}
-<button data-modal-target="static-modal" data-modal-toggle="static-modal" className="block  hover:text-blue-500 cursor-pointer text-gray-500  px-5 py-2.5 text-center " type="button">
-  Courses
- 
-</button>
+        {/* ------------------------------------------------------------------ */}
+
+        {/* <!-- Modal toggle --> */}
+        <span><IoMenu className="size-8 block lg:hidden" /> </span>
+        <button data-modal-target="static-modal" data-modal-toggle="static-modal" className="block  hover:text-blue-500 cursor-pointer text-gray-500  px-5 py-2.5 text-center " type="button">
+          <select className="hover:text-blue-500 text-purple-600 cursor-pointer">
+            <option value="Courses">Courses</option>
+          </select>
+        </button>
 
 
-{/* <!-- Main modal --> */}
-<div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative   p-4 mb-32 w-full max-w-4xl max-h-full">
-        {/* <!-- Modal content --> */}
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            {/* <!-- Modal header --> */}
-            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+        {/* <!-- Main modal --> */}
+        <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative mb-24  p-4 w-full max-w-4xl max-h-full">
+            {/* <!-- Modal content --> */}
+            <div class="relative bg-white h-full rounded-lg shadow dark:bg-gray-700">
+              {/* <!-- Modal header --> */}
+              <div class="">
+                {/* <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                     Static modal
-                </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
-                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
+                </h3> */}
+
+              </div>
+              {/* <!-- Modal body --> */}
+              <div className="flex bg-white  h-96 ">
+
+
+                <div className="flex flex-col border-r-1 items-center mt-7 h-full w-1/4">
+                  <a herf="" className="text-white hover:text-gray-400 bg-blue-500  text-lg hover:bg-blue-200  w-full h-12 text-center">Learning Paths</a>
+                  <a href="" className="text-gray-400  text-lg hover:bg-blue-200 w-full h-12 text-center">Practices</a>
+
+                </div>
+                <div className="flex flex-row bg-gray-400 h-full w-0.5"></div>
+                <div className="  h-full p-5  w-1/3">
+                  <div className=" rounded-md  border border-r-4 justify-center h-full p-10">
+
+                    <img src="programiz.png" />
+                    <div className="flex flex-col text-gray-500 font-bold text-xl ">
+                      <span >Learn Python</span>
+                      <span>Interactively</span>
+                    </div>
+                    <div className="text-white bg-blue-700 text-lg hover:bg-blue-400 mt-8 rounded-md h-11 w-48 font-semibold items-center justify-center text-center">
+                      <h2>Try Comestro PRO -</h2>
+                    </div>
+                  </div>
+                </div>
+                <div className=" mt-3 h-full w-1/3">
+                  <Learn />
+
+                </div>
+                <button type="button" class="text-black mt-8  bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
                 </button>
+
+              </div>
+
+              {/* <!-- Modal footer --> */}
+
             </div>
-            {/* <!-- Modal body --> */}
-            <div class="p-4 md:p-5 space-y-4">
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                </p>
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                </p>
-            </div>
-            {/* <!-- Modal footer --> */}
-            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button data-modal-hide="static-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
-                <button data-modal-hide="static-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
-            </div>
+          </div>
         </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-       
         <select className="hover:text-blue-500 cursor-pointer text-gray-500">
           <option value="Courses">Tutorials</option>
         </select>
@@ -88,7 +99,7 @@ const Header = () => {
       <button className="font-semibold text-sm text-blue-500 bg-sky-50 hover:bg-sky-100 border border-blue-500 py-1 md:px-2 px-1 rounded">
         Comestro-techlabs PRO
       </button>
-    </div>  
+    </div>
   );
 };
 
