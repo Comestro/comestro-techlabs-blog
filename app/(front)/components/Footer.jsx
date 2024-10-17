@@ -7,9 +7,9 @@ const Footer = () => {
                 <div className='flex flex-col gap-4 '>
                     <img src="./mainLogo2.png" alt="" className='cursor-pointer w-[25vh]' />
                     <p className='font-semibold text-xl'>Join our newsletter for the latest updates.</p>
-                    <div className='flex '>
-                        <input type="text" placeholder='Enter Email Address' className='p-4' />
-                        <button className='flex items-center p-4 uppercase bg-sky-600 hover:bg-sky-700'>Join</button>
+                    <div className='flex'>
+                        <input type="text" placeholder='Enter Email Address' className='p-4 rounded-l-md' />
+                        <button className='flex items-center p-4 uppercase rounded-r-md bg-sky-600 hover:bg-sky-700'>Join</button>
                     </div>
                     <div className='flex flex-col'>
                         <img src="./google-play.png" alt="" className='w-48 -ml-3 cursor-pointer' />
