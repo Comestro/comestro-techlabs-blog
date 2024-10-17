@@ -14,12 +14,15 @@ export default function RootLayout({ children }) {
       <body>
         <div className="flex flex-1  flex-col">
           <AdminNavbar />
-          <div className="w-4/12">
-          <Sidebar/>
+          <div className="flex flex-1">
+            <div className="w-3/12">
+              <Sidebar />
+            </div>
+            <div className="w-8/12">
+              {children}
+            </div>
           </div>
-          <div className="w-8/12">
-            {children}
-          </div>
+
 
 
 
