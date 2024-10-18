@@ -1,8 +1,8 @@
 import React from 'react'
 import CourseForm from '../_components/course-form'
-import { Connect } from '@/db/Connect'
 import Course from '@/db/models/Course'
 import { redirect } from 'next/navigation'
+import Connect from '@/db/Connect'
 
 
 const page = () => {
@@ -10,7 +10,7 @@ const page = () => {
   const handleInsertForm = async ()=>{
     "use serve"
     Connect();
-    let data = await Course.create({title,description,image,author,duration})
+    let data = await Course.create({title,description,author,duration,image})
     redirect('/admin/course')
 
   }
