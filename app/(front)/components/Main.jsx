@@ -7,6 +7,7 @@ import Footer from './Footer'
 import Header from './Header'
 import EnrollCourse from './EnrollCourse'
 import Compiler from './Compiler'
+import ComestroBenifits from './ComestroBenifits'
 
 const Main = () => {
   return (
@@ -19,6 +20,7 @@ const Main = () => {
         <Courses/>
         <EnrollCourse/>
         <Compiler/>
+        <ComestroBenifits/>
         <Footer/>
     </div>
   )
