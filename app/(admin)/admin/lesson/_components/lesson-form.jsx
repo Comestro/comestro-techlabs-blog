@@ -29,7 +29,6 @@ const LessonForm = () => {
           <input
             type="file"
             className="px-3 py-2 w-full rounded"
-            placeholder="date of publish"
           />
         </div>
         <div className="mb-3  flex flex-col">
