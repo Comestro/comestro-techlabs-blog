@@ -1,6 +1,19 @@
+
+import Connect from "@/db/Connect";
+import Chapter from "@/db/models/Chapter";
+import { redirect } from "next/navigation";
 import React from "react";
 
-const ChapterCalling = () => {
+const ChapterCalling = async () => {
+ Connect();
+  const callingRecords =await Chapter.find({});
+
+  const handleDlete = async (formData) => {
+    "use server"
+    let id = formData.get("recordId");
+    await Chapter.findByIdAndDelete(id)
+    redirect("/admin/chapter")
+  }
   return (
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg flex flex-1">
       <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -10,46 +23,45 @@ const ChapterCalling = () => {
               Course title
             </th>
             <th scope="col" class="px-6 py-3">
-              Author
+            Description
             </th>
             <th scope="col" class="px-6 py-3">
-              Description
+              Publish
             </th>
             <th scope="col" class="px-6 py-3">
-              Duration
+              Status
             </th>
             <th scope="col" class="px-6 py-3">
               Action
             </th>
+           
           </tr>
         </thead>
         <tbody>
-          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              Apple MacBook Pro 17"
-            </th>
-            <td class="px-6 py-4">Silver</td>
-            <td class="px-6 py-4">Laptop</td>
-            <td class="px-6 py-4">$2999</td>
-            <td class="px-6 py-4 flex gap-4">
-              <a
-                href="#"
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                Edit
-              </a>
-              <a
-                href="#"
-                class="font-medium text-red-600 dark:text-blue-500 hover:underline"
-              >
-                Delete
-              </a>
-            </td>
-          </tr>
-          </tbody>
+         
+          {
+          callingRecords.map((record, index) => {
+                        return(
+                            <tr key = {index}>
+                                <td className='border p-3'>{record.title}</td>
+                                <td className='border p-3'>{record.description}</td>
+                                <td className='border p-3'>{record.publish}</td>
+                                <td className='border p-3'>{record.states}</td>
+                                <td className='border p-3'>
+                                    <form method='post' action={handleDlete}>
+                                        <input type='hidden' name='recordId' value={record.id}/>
+                                        <input type='submit' className='bg-red-600 text-white px-3 py-2 rounded' value="DELETE"/>
+                                    </form>
+                                   
+                                </td>
+
+                            </tr>
+
+                        )
+
+                    })
+                }
+        </tbody>
       </table>
     </div>
   );
