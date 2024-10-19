@@ -28,7 +28,7 @@ const CourseForm = () => {
     redirect("/admin/course");
   }
   return (
-    <div className="bg-slate-200  p-10 border-red-300  border flex flex-col w-full ">
+    <div className="bg-slate-200  p-10 border-red-300  border flex flex-col w-full">
       <h2 className="text-2xl font-semibold text-center p-2">Insert Course</h2>
       <form action={handleInsertCourse} className="flex flex-col gap-1">
         <div className="mb-3  flex flex-col">
