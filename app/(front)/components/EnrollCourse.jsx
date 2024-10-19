@@ -1,8 +1,24 @@
+"use client"
 import { FaCircle } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { useState , useEffect } from "react";
+import { Covers } from "./Covers";
 
 
 const EnrollCourse = () => {
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  useEffect(()=>{
+    const interval =setInterval(()=>{
+      setCurrentImageIndex((prevIndex)=>
+        prevIndex === Covers.length - 1 ? 0 : prevIndex + 1
+      );
+    },4000);
+    return ()=>
+      clearInterval(interval);
+  },[Covers.length])
+
   return (
     <div className="bg-gray-50 p-28 flex flex-col gap-16">
       <div className="flex gap-28">
@@ -26,7 +42,7 @@ const EnrollCourse = () => {
         </div>
         <button className="bg-blue-600 hover:bg-blue-900 transition text-white px-3 py-2 rounded text-lg font-bold font-sans w-fit">Join for FREE</button>
       </div>
-      <img src="crousel2.png" alt="crousel2" className="border-8 border-black rounded-2xl"/>
+      <img src={Covers[currentImageIndex]} alt="cover2" className=' border-8 rounded-3xl border-black' />
       </div>
       <div className="flex  p-2 gap-5">
         <div className="flex flex-col w-3/12 gap-5">
