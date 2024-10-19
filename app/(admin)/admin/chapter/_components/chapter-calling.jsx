@@ -7,16 +7,13 @@ const ChapterCalling = () => {
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             <th scope="col" class="px-6 py-3">
-              Course title
-            </th>
-            <th scope="col" class="px-6 py-3">
-              Author
+              Chapter title
             </th>
             <th scope="col" class="px-6 py-3">
               Description
             </th>
             <th scope="col" class="px-6 py-3">
-              Duration
+             Date of Publish
             </th>
             <th scope="col" class="px-6 py-3">
               Action
@@ -33,7 +30,6 @@ const ChapterCalling = () => {
             </th>
             <td class="px-6 py-4">Silver</td>
             <td class="px-6 py-4">Laptop</td>
-            <td class="px-6 py-4">$2999</td>
             <td class="px-6 py-4 flex gap-4">
               <a
                 href="#"
