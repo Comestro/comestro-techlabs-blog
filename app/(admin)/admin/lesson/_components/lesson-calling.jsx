@@ -1,6 +1,10 @@
+import Connect from '@/db/Connect';
+import Lesson from '@/db/models/Lesson';
 import React from 'react'
 
-const LessonCalling = () => {
+const LessonCalling =async () => {
+  Connect();
+  const lesson = await Lesson.find({});
   return (
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg flex flex-1">
       <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -21,15 +25,16 @@ const LessonCalling = () => {
           </tr>
         </thead>
         <tbody>
+        {lesson.map((less,i) =>( 
           <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
             <th
               scope="row"
               class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
             >
-              Apple MacBook Pro 17"
+              {less.title}
             </th>
-            <td class="px-6 py-4">Silver</td>
-            <td class="px-6 py-4">Laptop</td>
+            <td class="px-6 py-4">{less.description}</td>
+            <td class="px-6 py-4">{less.image}</td>
             <td class="px-6 py-4 flex gap-4">
               <a
                 href="#"
@@ -45,6 +50,7 @@ const LessonCalling = () => {
               </a>
             </td>
           </tr>
+          ))}
           </tbody>
       </table>
     </div>
