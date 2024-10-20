@@ -10,10 +10,6 @@ import { LiaLinkedinIn } from "react-icons/lia";
 import { BsEmojiGrin } from "react-icons/bs";
 import {BsEmojiFrown} from "react-icons/bs";
 
-
-
-
-
 const MultilineComments = () => {
     return (
         <div className='flex flex-1 gap-5 flex-col'>

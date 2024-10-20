@@ -17,8 +17,6 @@ const pythonIntroduction = () => {
                            
                             <h1 className='font-sans font-semibold  '>Pyhton Fundamentals</h1>
                             <IoIosArrowForward className='text-xl text-gray-400' />
-
-
                         </div>
                         <hr />
 

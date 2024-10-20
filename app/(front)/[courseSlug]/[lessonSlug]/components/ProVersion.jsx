@@ -1,13 +1,7 @@
 import React from 'react'
-import { IoIosArrowForward } from "react-icons/io";
-import { PiUsers } from "react-icons/pi";
 import { GoCodeSquare } from "react-icons/go";
-import { FaRocket } from "react-icons/fa6";
 import { PiMedalLight } from "react-icons/pi";
 import { SiAzuredataexplorer } from "react-icons/si";
-
-
-
 
 const ProVersion = () => {
     return (
