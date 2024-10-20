@@ -57,22 +57,22 @@ const ProVersion = () => {
                 </div>
                 <h1 className='font-sans text-2xl py-5 font-bold text-blue-950'>Related Tutorials</h1>
                 <div className='grid grid-cols-4 gap-5'>
-                    <div className='flex flex-col hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
+                    <div className='flex flex-col cursor-pointer hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
                         <p className='text-sm font-san text-gray-500'>Python Tutorial</p>
                         <p className='font-sans font-bold text-lg text-gray-600'>Python comments</p>
                     </div>
 
-                    <div className='flex flex-col hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
+                    <div className='flex flex-col cursor-pointer hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
                         <p className='text-sm font-san text-gray-500'>Python Tutorial</p>
                         <p className='font-sans font-bold text-lg text-gray-600'>Your First python Program</p>
                     </div>
 
-                    <div className='flex flex-col hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
+                    <div className='flex flex-col cursor-pointer hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
                         <p className='text-sm font-san text-gray-500'>Python Tutorial</p>
                         <p className='font-sans font-bold text-lg text-gray-600'>Python Docstrings</p>
                     </div>
 
-                    <div className='flex flex-col hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
+                    <div className='flex flex-col cursor-pointer hover:scale-105 transition gap-3 p-5 shadow-xl border-white rounded-lg border-t-4 border-t-blue-500 h-[20vh] border'>
                         <p className='text-sm font-san text-gray-500'>Python Tutorial</p>
                         <p className='font-sans font-bold text-lg text-gray-600'>Python pass Statement</p>
                     </div>

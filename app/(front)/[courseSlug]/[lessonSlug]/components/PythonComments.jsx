@@ -11,7 +11,7 @@ const pythonComments = () => {
         <p className='font-sans text-xl text-gray-500 '>In the previous tutorial, you learned to write your first <Link href='#' className='text-blue-500 hover:text-blue-700'>Python program.</Link>  Now, let's learn <br />
           about Python comments.</p>
 
-        <div className='border flex justify-center items-center border-l-4 border-l-blue-600 p-5'>
+        <div className='border bg-slate-50 flex justify-center items-center border-l-4 border-l-blue-600 p-5'>
           <p className="  font-sans text-xl text-gray-500"><strong>Important!</strong>: We are introducing comments early in this tutorial series because we <br /> will be using them to explain the code in upcoming tutorials. </p>
         </div>
 
