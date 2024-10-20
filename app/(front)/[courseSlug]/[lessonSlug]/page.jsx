@@ -4,13 +4,14 @@ import PythonIntroduction from './components/PythonIntroduction'
 import PythonComments from './components/PythonComments'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import ProVersion from './components/ProVersion'
 
 const page = () => {
   return (
-    <>
+    <div className='flex flex-col'>
     <Header/>
-    <div className='flex flex-1'>
-        <div className='w-4/12 justify-end bg-slate-50'>
+    <div className='flex flex-1 '>
+        <div className='w-4/12 justify-end '>
         <PythonIntroduction/>
         
         
@@ -20,9 +21,11 @@ const page = () => {
         <PythonComments/>
         
         </div>
+        
     </div>
+    <ProVersion/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
