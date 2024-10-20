@@ -8,6 +8,7 @@ import Header from './Header'
 import EnrollCourse from './EnrollCourse'
 import Compiler from './Compiler'
 import ComestroBenifits from './ComestroBenifits'
+import Review from './Review'
 
 const Main = () => {
   return (
@@ -21,6 +22,7 @@ const Main = () => {
         <EnrollCourse/>
         <Compiler/>
         <ComestroBenifits/>
+        <Review/>
         <Footer/>
     </div>
   )
