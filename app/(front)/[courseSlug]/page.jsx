@@ -60,7 +60,7 @@ const page = () => {
             </div>
 
             <div className='flex flex-1 justify-center py-14 px-[14%] '>
-                <div className=' flex flex-col  flex-1  bg-red-100 h-[55vh] py-5 px-10'>
+                <div className=' flex flex-col  flex-1  bg-red-100  p-10 rounded'>
                     <div className='w-48  h-14 flex justify-center items-center'>
                         <img src="/mainLogo2.png" alt="" className='object-cover w-full' />
                     </div>
@@ -319,9 +319,8 @@ const page = () => {
 
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Text-based Tutorial</h1>
 
-                    <div className='flex gap-1  py-4 px-3  border border-l-4 border-blue-500 font-medium'>
-                        <h1 className='font-sans font-semibold text-xl text-gray-600'>Best:</h1>
-                        <p className='font-sans text-xl font-normal text-gray-500'> if you are committed to learning Python but do not want to spend on it</p>
+                    <div className='flex gap-1  py-4 px-3 rounded  border border-l-4 border-l-blue-500 font-medium'>
+                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong> if you are committed to learning Python but do not want to spend on it</p>
                     </div>
                     <p>If you want to learn Python for free with a well-organized, step-by-step tutorial, <br />
                         you can use our free Python tutorials.</p>
@@ -329,18 +328,16 @@ const page = () => {
                     <p>Our tutorials will guide you through Python one step at a time, using practical <br />
                         examples to strengthen your foundation.</p>
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Interactive Course</h1>
-                    <div className='flex gap-1  py-4 px-3  border border-l-4 border-blue-500 font-medium'>
-                        <h1 className='font-sans font-semibold text-xl text-gray-600'>Best:</h1>
-                        <p className='font-sans text-xl font-normal text-gray-500'>if you want hands-on learning, get your progress tracked, and <br /> maintain a learning streak</p>
+                    <div className='flex gap-1  py-4 px-3 rounded  border border-l-4 border-l-blue-500 font-medium'>
+                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong>if you want hands-on learning, get your progress tracked, and <br /> maintain a learning streak</p>
                     </div>
                     <p>Learning to code is tough. It requires dedication and consistency, and you need to <br /> write tons of code yourself.</p>
                     <p>While videos and tutorials provide you with a step-by-step guide, they lack hands- <br /> on experience and structure.</p>
                     <p>Recognizing all these challenges, Programiz offers a premium Learn Python <br /> Course that allows you to gain hands-on learning experience by solving <br /> challenges, building real-world projects, and tracking your progress.</p>
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Online Video</h1>
 
-                    <div className='flex gap-1  py-4 px-3  border border-l-4 border-blue-500 font-medium'>
-                        <h1 className='font-sans font-semibold text-xl text-gray-600'>Best:</h1>
-                        <p className='font-sans text-xl font-normal text-gray-500'> if you are an audio-visual learner and learn by watching others code <br /> and following along</p>
+                    <div className='flex gap-1 rounded  py-4 px-3  border border-l-4 border-l-blue-500 font-medium'>
+                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong> if you are an audio-visual learner and learn by watching others code <br /> and following along</p>
 
 
                     </div>
@@ -354,9 +351,8 @@ const page = () => {
                     <p>If you're looking for a structured university course at zero cost, visit <span className='text-blue-600 cursor-pointer hover:text-blue-900'>Python Course <br /> - University of Helsinki.</span>  </p>
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Mobile App</h1>
 
-                    <div className='flex gap-1  py-4 px-3  border border-l-4 border-blue-500 font-medium'>
-                        <h1 className='font-sans font-semibold text-xl text-gray-600'>Best:</h1>
-                        <p className='font-sans text-xl font-normal text-gray-500'>if you are a casual and hobby learner who wants to learn Python on <br /> the go</p>
+                    <div className='flex gap-1 rounded  py-4 px-3  border border-l-4 border-l-blue-500 font-medium'>
+                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong> if you are a casual and hobby learner who wants to learn Python on <br /> the go</p>
                     </div>
 
                     <p>While it's possible to learn Python from mobile apps, it's not the ideal way because <br /> writing code can be challenging. Additionally, it's difficult to build real-world <br /> projects with multiple files on mobile devices.</p>
@@ -367,12 +363,10 @@ const page = () => {
                         <li className='flex items-center'><BsDot className='text-blue-950 text-2xl' />
                             Sololearn</li>
                     </ul>
-                    <div className='flex gap-1  itmes-center justify-center py-4 px-3 flex-col border border-l-4 border-blue-500 font-medium'>
+                    <div className='flex rounded  gap-4 itmes-center justify-center py-4 px-3 flex-col border border-l-4 border-l-blue-500 font-medium'>
 
 
-                        <p className='flex  font-sans text-xl font-normal text-gray-500'> <span className='font-sans font-semibold text-xl text-gray-600'>Important:</span> You cannot learn to code without developing the habit of writing <br />
-                        </p>
-                        <span className='mb-5 flex  font-sans text-xl font-normal text-gray-500'>code yourself. Therefore, whatever method you choose, always write code.</span>
+                    <p className='font-sans text-xl font-normal text-gray-500'> <strong>Important:</strong>You cannot learn to code without developing the habit of writing <br /> code yourself. Therefore, whatever method you choose, always write code.</p>
 
 
 
