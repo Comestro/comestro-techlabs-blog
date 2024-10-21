@@ -12,64 +12,60 @@ const CourseCalling = async () => {
           <tr>
             <th scope="col" class="px-6 py-3">
               Id
-            
             </th>
             <th scope="col" class="px-6 py-3">
-             Title
+              Title
             </th>
             <th scope="col" class="px-6 py-3">
-                Description
+              Description
             </th>
             <th scope="col" class="px-6 py-3">
-             Author
+              Author
             </th>
             <th scope="col" class="px-6 py-3">
-               Image
+              Image
             </th>
             <th scope="col" class="px-6 py-3">
-               Duration
+              Duration
             </th>
           </tr>
         </thead>
         <tbody>
-          {course.map((cor,i) =>( 
-          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-              {i+1}
-            </th>
-            <td class="px-6 py-4">
-            {cor.title}
-            </td>
-            <td class="px-6 py-4">
-              {cor.description}
-            </td>
-            <td class="px-6 py-4">
-              {cor.author}
-            </td>
-            <td class="px-6 py-4">
-              {cor.image}
-            </td>
-            <td class="px-6 py-4">
-              {cor.duration}
-            </td>
-            <td class="px-6 py-4 flex gap-6">
-              <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-              <a href="#" class="font-medium text-red-600 dark:text-blue-500 hover:underline">Delete</a>
-            </td>
-          </tr>
-
+          {course.map((cor, i) => (
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                {i + 1}
+              </th>
+              <td class="px-6 py-4">{cor.title}</td>
+              <td class="px-6 py-4">{cor.description}</td>
+              <td class="px-6 py-4">{cor.author}</td>
+              <td class="px-6 py-4">{cor.image}</td>
+              <td class="px-6 py-4">{cor.duration}</td>
+              <td class="px-6 py-4 flex gap-6">
+                <form action="" method="post">
+                  <a
+                    href="#"
+                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  >
+                    Edit
+                  </a>
+                </form>
+                <a
+                  href="#"
+                  class="font-medium text-red-600 dark:text-blue-500 hover:underline"
+                >
+                  Delete
+                </a>
+              </td>
+            </tr>
           ))}
-          
-          
-          
-          
         </tbody>
       </table>
     </div>
-
-
-
-  )
+  );
 }
 
 export default CourseCalling
