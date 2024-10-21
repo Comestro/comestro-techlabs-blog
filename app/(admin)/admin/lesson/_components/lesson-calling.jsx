@@ -5,7 +5,7 @@ import React from 'react'
 
 const LessonCalling = async () => {
   Connect();
-  const lesson = await Lesson.find({});
+  const lesson = await Lesson.find().populate("chapter");
   const handleDelete = async (formData) => {
     "use server"
     let id = formData.get("lessId");
@@ -36,6 +36,9 @@ const LessonCalling = async () => {
               Description
             </th>
             <th scope="col" class="px-6 py-3">
+              Chapter title
+            </th>
+            <th scope="col" class="px-6 py-3">
               URL
             </th>
             <th scope="col" class="px-6 py-3">
@@ -45,7 +48,13 @@ const LessonCalling = async () => {
         </thead>
         <tbody>
         {lesson.map((less,i) =>( 
-          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+          <tr key={i} class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              {i +1}
+            </th>
             <th
               scope="row"
               class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -53,6 +62,7 @@ const LessonCalling = async () => {
               {less.title}
             </th>
             <td class="px-6 py-4">{less.description}</td>
+            <td class="px-6 py-4">{less.chapter?.title}</td>
             <td class="px-6 py-4">{less.image}</td>
             <td class="px-6 py-4 flex gap-4">
               <a
@@ -62,7 +72,7 @@ const LessonCalling = async () => {
                 Edit
               </a>
               <a
-                href="#"
+                href=""
                 class="font-medium text-red-600 dark:text-blue-500 hover:underline"
               >
                 Delete
