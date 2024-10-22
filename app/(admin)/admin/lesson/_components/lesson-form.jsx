@@ -1,10 +1,13 @@
-import Connect from "@/db/Connect"
+
 import Lesson from "@/db/models/Lesson"
 import { redirect } from "next/navigation"
 import { join } from "path";
 import { writeFile } from "fs/promises";
+import Connect from "@/db/Connect";
+import Chapter from "@/db/models/Chapter";
 
-const LessonForm = () => {
+const LessonForm = async () => {
+  const chapter= await Chapter.find({});
 
   //Server Action
   const handleInsertLesson =async (formData) => {
@@ -19,10 +22,16 @@ const LessonForm = () => {
 
     let title = formData.get("title")
     let description = formData.get("description")
+    let chapter = formData.get("chapter")
 
     Connect();
 
-    let newdata = await Lesson.create({title:title,description:description,image:image.name})
+    let newdata = await Lesson.create({
+      title:title,
+      description:description,
+      image:image.name,
+      chapter:chapter,
+    })
 
     redirect("/admin/lesson")
   }
@@ -50,6 +59,20 @@ const LessonForm = () => {
             name="description"
           ></textarea>
         </div>
+
+        <div className="mb-3  flex flex-col">
+          <label htmlFor="course">Chapter Title</label>
+          <select id="cchapter" name="chapter" className="px-3 py-2 w-full rounded">
+            <option value="" disabled="true">
+              Select Chapter
+            </option>
+            {chapter.map((char, i) => (
+              <option key={i} value={char._id}>
+                {char.title}
+              </option>
+            ))}
+          </select>
+        </div>
        
 
         <div className="mb-3  flex flex-col">
@@ -60,15 +83,7 @@ const LessonForm = () => {
             name="image"
           />
         </div>
-        <div className="mb-3  flex flex-col">
-          <label htmlFor="">Status</label>
-          <input
-            type="text"
-            className="px-3 py-2 w-full rounded"
-            placeholder=""
-          />
-        </div>
-
+        
         <input
           type="submit"
           className="px-5 py-2 bg-teal-700 text-white flex self-center rounded"

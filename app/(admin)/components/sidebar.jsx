@@ -4,9 +4,6 @@ import React from 'react'
 const Sidebar = () => {
   return (
     <>
-
-
-
       <aside id="sidebar-multi-level-sidebar" class=" left-0 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 " aria-label="Sidebar">
         <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul class="space-y-2 font-medium">
@@ -25,9 +22,7 @@ const Sidebar = () => {
                   <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
                 </svg>
                 <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"> Manage Course</span>
-
               </a>
-
             </li>
             <li>
               <a href="/admin/course/course-create" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -35,9 +30,7 @@ const Sidebar = () => {
                   <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375Z" />
                   <path fill-rule="evenodd" d="m3.087 9 .54 9.176A3 3 0 0 0 6.62 21h10.757a3 3 0 0 0 2.995-2.824L20.913 9H3.087ZM12 10.5a.75.75 0 0 1 .75.75v4.94l1.72-1.72a.75.75 0 1 1 1.06 1.06l-3 3a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06l1.72 1.72v-4.94a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
                 </svg>
-
                 <span class="flex-1 ms-3 whitespace-nowrap">Insert Course</span>
-
               </a>
             </li>
             <li>
@@ -46,7 +39,6 @@ const Sidebar = () => {
                   <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                 </svg>
                 <span class="flex-1 ms-3 whitespace-nowrap">Manage chapter</span>
-
               </a>
             </li>
             <li>
@@ -57,7 +49,6 @@ const Sidebar = () => {
                 </svg>
 
                 <span class="flex-1 ms-3 whitespace-nowrap">Insert Chapter</span>
-
               </a>
             </li>
             <li>
@@ -77,7 +68,7 @@ const Sidebar = () => {
                 <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
               </a>
             </li>
-           
+
             <li>
               <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                 <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -91,10 +82,7 @@ const Sidebar = () => {
           </ul>
         </div>
       </aside>
-
-
     </>
-
   );
 }
 

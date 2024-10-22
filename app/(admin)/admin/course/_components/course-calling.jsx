@@ -1,10 +1,19 @@
 import Connect from '@/db/Connect'
 import Course from '@/db/models/Course';
+import { redirect } from 'next/navigation';
 import React from 'react'
 
 const CourseCalling = async () => {
   Connect();
+
+
   const course = await Course.find({});
+  const handleDelete = async (formData) => {
+    "use server"
+    let id = formData.get("corId");
+    await Course.findByIdAndDelete(id)
+    redirect("/admin/course")
+  }
   return (
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg flex flex-1  ">
       <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -15,19 +24,19 @@ const CourseCalling = async () => {
             
             </th>
             <th scope="col" class="px-6 py-3">
-             Title
+              Title
             </th>
             <th scope="col" class="px-6 py-3">
-                Description
+              Description
             </th>
             <th scope="col" class="px-6 py-3">
-             Author
+              Author
             </th>
             <th scope="col" class="px-6 py-3">
-               Image
+              Image
             </th>
             <th scope="col" class="px-6 py-3">
-               Duration
+              Duration
             </th>
           </tr>
         </thead>
@@ -66,10 +75,7 @@ const CourseCalling = async () => {
         </tbody>
       </table>
     </div>
-
-
-
-  )
+  );
 }
 
 export default CourseCalling
