@@ -13,14 +13,10 @@ import ComPro from '../components/ComPro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-
-
-
-
-
-const page = () => {
+const page = ({params}) => {
     return (
         <div>
+            
             <ComPro />
             <Header />
             <div className='flex flex-1 h-[40vh] bg-blue-200 justify-center'>
@@ -28,7 +24,7 @@ const page = () => {
                     <div className='border border-gray-700 rounded h-14 w-14 '>
                         <img alt="Python-Logo" className="w-14   " src="/python-logo.svg" title="Python" />
                     </div>
-                    <h1 className='font-sans text-3xl font-bold text-gray-700'>Learn Python Programming</h1>
+                    <h1 className='font-sans text-3xl font-bold text-gray-700'>Learn {params.courseSlug}</h1>
                     <div className='flex mt-8 '>
                         <div className='flex justify-center items-center bg-slate-100 px-2 py-1 rounded gap-1 font-sans font-medium text-gray-700'>
                             <RiBookLine />
@@ -67,7 +63,7 @@ const page = () => {
                     <div className='flex flex-1'>
                         <div className='flex flex-col mt-8 gap-3'>
                             <p className='font-sans font-semibold text-red-400'>Recommended Course:</p>
-                            <h1 className='font-sans font-bold text-3xl text-blue-950 '>Master Python Programming</h1>
+                            <h1 className='font-sans font-bold text-3xl text-blue-950 '>Master {params.courseSlug}</h1>
                             <p className='font-sans  font-normal text-blue-950'>Perfect for beginners serious about building a career in Python.</p>
                             <p className='font-sans  font-normal text-blue-950'>Created by the Programiz team with over a decade of experience.</p>
                             <div className=' bg-blue-600 flex justify-center items-center hover:bg-blue-800 cursor-pointer  gap-1 rounded   w-[30%] text-2xl font-sans font-semibold p-2 text-white' >Try Now
