@@ -22,7 +22,7 @@ const page = ({params}) => {
             <div className='flex flex-1 h-[40vh] bg-blue-200 justify-center'>
                 <div className=' flex   flex-col justify-center items-center gap-3 '>
                     <div className='border border-gray-700 rounded h-14 w-14 '>
-                        <img alt="Python-Logo" className="w-14   " src="/python-logo.svg" title="Python" />
+                        <img alt="{params.courseSlug}-Logo" className="w-14   " src="/python-programming.svg" title="{params.courseSlug}" />
                     </div>
                     <h1 className='font-sans text-3xl font-bold text-gray-700'>Learn {params.courseSlug}</h1>
                     <div className='flex mt-8 '>
@@ -64,7 +64,7 @@ const page = ({params}) => {
                         <div className='flex flex-col mt-8 gap-3'>
                             <p className='font-sans font-semibold text-red-400'>Recommended Course:</p>
                             <h1 className='font-sans font-bold text-3xl text-blue-950 '>Master {params.courseSlug}</h1>
-                            <p className='font-sans  font-normal text-blue-950'>Perfect for beginners serious about building a career in Python.</p>
+                            <p className='font-sans  font-normal text-blue-950'>Perfect for beginners serious about building a career in {params.courseSlug}.</p>
                             <p className='font-sans  font-normal text-blue-950'>Created by the Programiz team with over a decade of experience.</p>
                             <div className=' bg-blue-600 flex justify-center items-center hover:bg-blue-800 cursor-pointer  gap-1 rounded   w-[30%] text-2xl font-sans font-semibold p-2 text-white' >Try Now
                                 <IoIosArrowForward className='mt-2' />
@@ -105,32 +105,32 @@ const page = ({params}) => {
 
             <div className="flex flex-1 flex-col items-center  justify-center    ">
                 <div className=" flex flex-col text-xl font-normal  font-sans  ml-24   text-blue-950 gap-3  text-start  ">
-                    <p >Python is one of the top programming languages in the world, widely used in fields <br /> such as AI, machine learning, data science, and web development.</p>
+                    <p >{params.courseSlug} is one of the top programming languages in the world, widely used in fields <br /> such as AI, machine learning, data science, and web development.</p>
 
-                    <p >The simple and English-like syntax of Python makes it a go-to language for <br /> beginners who want to get into coding quickly.</p>
+                    <p >The simple and English-like syntax of {params.courseSlug} makes it a go-to language for <br /> beginners who want to get into coding quickly.</p>
 
-                    <p>Because Python is used in multiple fields, there is a high demand for Python <br /> developers, with competitive base salaries.</p>
+                    <p>Because {params.courseSlug} is used in multiple fields, there is a high demand for {params.courseSlug} <br /> developers, with competitive base salaries.</p>
 
                     <p className='font-medium'>In this guide, we will cover:</p>
 
                     <ul className='text-blue-600 '>
                         <li className='flex  items-center'><BsDot className='text-blue-950 text-2xl' />
-                            Beginner's Guide to Python</li>
+                            Beginner's Guide to {params.courseSlug}</li>
                         <li className='flex items-center'><BsDot className='text-blue-950 text-2xl' />
-                            Is Python for you?</li>
+                            Is {params.courseSlug} for you?</li>
                         <li className='flex itmes-center'><BsDot className='text-blue-950 text-2xl' />
-                            Best Way to Learn Python</li>
+                            Best Way to Learn {params.courseSlug}</li>
                         <li className='flex items-center'><BsDot className='text-blue-950 text-2xl' />
-                            How to Run Python?</li>
+                            How to Run {params.courseSlug}?</li>
                     </ul>
 
-                    <p>If you are simply looking to learn Python step-by-step, you can follow our free <br /> tutorials in the next section.</p>            </div>
+                    <p>If you are simply looking to learn {params.courseSlug} step-by-step, you can follow our free <br /> tutorials in the next section.</p>            </div>
             </div>
 
             <div className='flex flex-1 h-[auto]  bg-gray-50 justify-center items-center mt-5 py-10 '>
                 <div className='flex flex-col text-start gap-5    '>
-                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>Beginner's Guide to Python</h1>
-                    <p className='font-sans font-normal text-xl text-blue-950'>These tutorials will provide you with a solid foundation in Python and <br /> prepare you for your career goals.</p>
+                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>Beginner's Guide to {params.courseSlug}</h1>
+                    <p className='font-sans font-normal text-xl text-blue-950'>These tutorials will provide you with a solid foundation in {params.courseSlug} and <br /> prepare you for your career goals.</p>
 
                     <div className='flex  px-5 flex-col border rounded border-gray-300 bg-white '>
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
@@ -143,7 +143,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Fundamentals</h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Fundamentals</h1>
 
 
                         </div>
@@ -151,7 +151,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Flow Control</h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Flow Control</h1>
 
 
                         </div>
@@ -159,7 +159,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Data Types</h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Data Types</h1>
 
 
                         </div>
@@ -167,7 +167,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Function</h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Function</h1>
 
 
                         </div>
@@ -175,7 +175,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Files</h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Files</h1>
 
 
                         </div>
@@ -183,7 +183,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Exception Handling </h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Exception Handling </h1>
 
 
                         </div>
@@ -191,7 +191,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Object and Class</h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Object and Class</h1>
 
 
                         </div>
@@ -199,7 +199,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Advance Topics </h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Advance Topics </h1>
 
 
                         </div>
@@ -207,7 +207,7 @@ const page = ({params}) => {
 
                         <div className='flex items-center  gap-2 text-blue-950 py-4'>
                             <IoIosArrowForward className='text-xl' />
-                            <h1 className='font-sans font-semibold text-lg '>Python Data and Time</h1>
+                            <h1 className='font-sans font-semibold text-lg '>{params.courseSlug} Data and Time</h1>
 
 
                         </div>
@@ -230,10 +230,10 @@ const page = ({params}) => {
 
             <div className="flex flex-1 flex-col items-center  justify-center    ">
                 <div className=" flex flex-col text-lg font-sans ml-10 font-normal   text-blue-950 gap-3  text-start  ">
-                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>Is Python for you?</h1>
-                    <p >Whether Python is the right choice depends on what you want to accomplish <br /> and your career goals.</p>
-                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>Python from Learning Perspective</h1>
-                    <p>If you are new to programming and prefer simplicity, Python is probably the right <br /> choice for you.</p>
+                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>Is {params.courseSlug} for you?</h1>
+                    <p >Whether {params.courseSlug} is the right choice depends on what you want to accomplish <br /> and your career goals.</p>
+                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>{params.courseSlug} from Learning Perspective</h1>
+                    <p>If you are new to programming and prefer simplicity, {params.courseSlug} is probably the right <br /> choice for you.</p>
                 </div>
 
             </div>
@@ -268,18 +268,18 @@ const page = ({params}) => {
             <div className="flex flex-1 flex-col items-center  justify-center mb-20    ">
                 <div className=" flex flex-col text-xl font-normal  font-sans  ml-24   text-blue-950 gap-3  text-start  ">
 
-                    <p >Here, both programs in C and Python perform the same task. However, the Python <br />
+                    <p >Here, both programs in C and {params.courseSlug} perform the same task. However, the {params.courseSlug} <br />
                         code is much easier to understand, even if you have never been a programmer <br /> before.</p>
                     <p >That being said, there are some advantages to learning languages like C as your
                         <br /> first language. For example, C is much closer to the hardware and allows you to
                         <br /> work with computer memory directly, thus providing you with a deeper <br />
                         understanding of how your code actually works.</p>
-                    <p>On the other hand, Python's clear, English-like syntax allows you to concentrate on <br />
+                    <p>On the other hand, {params.courseSlug}'s clear, English-like syntax allows you to concentrate on <br />
                         problem-solving and building logic without being concerned about unnecessary <br />
                         complexities.</p>
                     <p>So, it's up to you whether you want to quickly get started with programming or <br /> really take your time to understand the nitty-gritty parts of programming.</p>
-                    <p className='py-2 font-bold text-2xl text-blue-950'>Python as a Career Choice</p>
-                    <p>Python is a widely used programming language for creating real-world <br />
+                    <p className='py-2 font-bold text-2xl text-blue-950'>{params.courseSlug} as a Career Choice</p>
+                    <p>{params.courseSlug} is a widely used programming language for creating real-world <br />
                         applications. It is extensively used in:</p>
                     <ul>
                         <li className='flex  items-center'><BsDot className='text-blue-950 text-2xl' />
@@ -292,10 +292,10 @@ const page = ({params}) => {
                             Backend Development</li>
                     </ul>
 
-                    <p>Thus, learning Python offers significant advantages for your career opportunities.</p>
-                    <p>However, there are certain fields where Python doesn't excel. For example, if you <br />
+                    <p>Thus, learning {params.courseSlug} offers significant advantages for your career opportunities.</p>
+                    <p>However, there are certain fields where {params.courseSlug} doesn't excel. For example, if you <br />
                         are interested in frontend development, game development, or mobile app <br />
-                        development, then Python is not the best choice.</p>
+                        development, then {params.courseSlug} is not the best choice.</p>
                     <p>In these cases, alternatives such as JavaScript for frontend development, Kotlin, <br />
                         Swift, or Dart for mobile app development, and C++ for game development will be <br />
                         more suitable.</p>
@@ -306,22 +306,22 @@ const page = ({params}) => {
 
             <div className="flex flex-1 flex-col items-center  justify-center bg-slate-50 py-14   ">
                 <div className=" flex flex-col text-xl font-normal  font-sans  ml-24   text-blue-950 gap-3  text-start  ">
-                    <h1 className='font-sans font-bold text-4xl text-blue-950 '>Best Way to Learn Python</h1>
-                    <p >There is no right or wrong way to learn Python. It all depends on your learning style <br />
+                    <h1 className='font-sans font-bold text-4xl text-blue-950 '>Best Way to Learn {params.courseSlug}</h1>
+                    <p >There is no right or wrong way to learn {params.courseSlug}. It all depends on your learning style <br />
                         and pace.</p>
 
-                    <p >In this section, we have included the best Python learning resources tailored to <br />
+                    <p >In this section, we have included the best {params.courseSlug} learning resources tailored to <br />
                         your learning preferences, be it text-based, video-based, or interactive courses.</p>
 
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Text-based Tutorial</h1>
 
                     <div className='flex gap-1  py-4 px-3 rounded  border border-l-4 border-l-blue-500 font-medium'>
-                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong> if you are committed to learning Python but do not want to spend on it</p>
+                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong> if you are committed to learning {params.courseSlug} but do not want to spend on it</p>
                     </div>
-                    <p>If you want to learn Python for free with a well-organized, step-by-step tutorial, <br />
-                        you can use our free Python tutorials.</p>
+                    <p>If you want to learn {params.courseSlug} for free with a well-organized, step-by-step tutorial, <br />
+                        you can use our free {params.courseSlug} tutorials.</p>
 
-                    <p>Our tutorials will guide you through Python one step at a time, using practical <br />
+                    <p>Our tutorials will guide you through {params.courseSlug} one step at a time, using practical <br />
                         examples to strengthen your foundation.</p>
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Interactive Course</h1>
                     <div className='flex gap-1  py-4 px-3 rounded  border border-l-4 border-l-blue-500 font-medium'>
@@ -329,7 +329,7 @@ const page = ({params}) => {
                     </div>
                     <p>Learning to code is tough. It requires dedication and consistency, and you need to <br /> write tons of code yourself.</p>
                     <p>While videos and tutorials provide you with a step-by-step guide, they lack hands- <br /> on experience and structure.</p>
-                    <p>Recognizing all these challenges, Programiz offers a premium Learn Python <br /> Course that allows you to gain hands-on learning experience by solving <br /> challenges, building real-world projects, and tracking your progress.</p>
+                    <p>Recognizing all these challenges, Programiz offers a premium Learn {params.courseSlug} <br /> Course that allows you to gain hands-on learning experience by solving <br /> challenges, building real-world projects, and tracking your progress.</p>
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Online Video</h1>
 
                     <div className='flex gap-1 rounded  py-4 px-3  border border-l-4 border-l-blue-500 font-medium'>
@@ -338,24 +338,24 @@ const page = ({params}) => {
 
                     </div>
 
-                    <p>If you're more of a visual learner, we have created a comprehensive Python course <br />
-                        for beginners that will guide you on your Python journey.</p>
+                    <p>If you're more of a visual learner, we have created a comprehensive {params.courseSlug} course <br />
+                        for beginners that will guide you on your {params.courseSlug} journey.</p>
 
-                    <p>Addit ionally, there's a popular <span className='text-blue-600 cursor-pointer hover:text-blue-900'>Python playlist</span>  by Corey Schafer available on <br />
-                        YouTube to further guide you on your Python journey.</p>
+                    <p>Addit ionally, there's a popular <span className='text-blue-600 cursor-pointer hover:text-blue-900'>{params.courseSlug} playlist</span>  by Corey Schafer available on <br />
+                        YouTube to further guide you on your {params.courseSlug} journey.</p>
 
-                    <p>If you're looking for a structured university course at zero cost, visit <span className='text-blue-600 cursor-pointer hover:text-blue-900'>Python Course <br /> - University of Helsinki.</span>  </p>
+                    <p>If you're looking for a structured university course at zero cost, visit <span className='text-blue-600 cursor-pointer hover:text-blue-900'>{params.courseSlug} Course <br /> - University of Helsinki.</span>  </p>
                     <h1 className='font-sans font-bold text-2xl text-blue-950 '>Mobile App</h1>
 
                     <div className='flex gap-1 rounded  py-4 px-3  border border-l-4 border-l-blue-500 font-medium'>
-                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong> if you are a casual and hobby learner who wants to learn Python on <br /> the go</p>
+                        <p className='font-sans text-xl font-normal text-gray-500'> <strong>Best:</strong> if you are a casual and hobby learner who wants to learn {params.courseSlug} on <br /> the go</p>
                     </div>
 
-                    <p>While it's possible to learn Python from mobile apps, it's not the ideal way because <br /> writing code can be challenging. Additionally, it's difficult to build real-world <br /> projects with multiple files on mobile devices.</p>
+                    <p>While it's possible to learn {params.courseSlug} from mobile apps, it's not the ideal way because <br /> writing code can be challenging. Additionally, it's difficult to build real-world <br /> projects with multiple files on mobile devices.</p>
                     <p>Nevertheless, you can use these apps to try things out.</p>
                     <ul className='text-blue-600 '>
                         <li className='flex  items-center'><BsDot className='text-blue-950 text-2xl' />
-                            Learn Python</li>
+                            Learn {params.courseSlug}</li>
                         <li className='flex items-center'><BsDot className='text-blue-950 text-2xl' />
                             Sololearn</li>
                     </ul>
@@ -376,9 +376,9 @@ const page = ({params}) => {
 
             <div className='flex flex-1 justify-center items-center py-10 '>
                 <div className='flex flex-col text-start gap-5 ml-20'>
-                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>How to Run Python?</h1>
-                    <h1 className='font-sans font-bold text-xl text-blue-950 '>1. Run Python in your browser.</h1>
-                    <p className='font-sans text-xl  font-normal  text-blue-950'>We have created an <span className='text-blue-600 cursor-pointer hover:text-blue-900'>online editor</span>  to run Python directly in your browser. You don't <br />
+                    <h1 className='font-sans font-bold text-3xl text-blue-950 '>How to Run {params.courseSlug}?</h1>
+                    <h1 className='font-sans font-bold text-xl text-blue-950 '>1. Run {params.courseSlug} in your browser.</h1>
+                    <p className='font-sans text-xl  font-normal  text-blue-950'>We have created an <span className='text-blue-600 cursor-pointer hover:text-blue-900'>online editor</span>  to run {params.courseSlug} directly in your browser. You don't <br />
                         have to go through a tedious installation process. It's completely free, and you can <br />
                         start coding directly.</p>
                     <div className='flex flex-col p-5 w-full h-[60vh] border rounded gap-4 bg-slate-100'>
@@ -387,25 +387,25 @@ const page = ({params}) => {
 
                         </div>
 
-                        <div className=' bg-blue-600 flex justify-center items-center hover:bg-blue-800 cursor-pointer  gap-1 rounded   w-[33%] text-lg font-sans font- p-2 font-medium text-white' >Run Python Online
+                        <div className=' bg-blue-600 flex justify-center items-center hover:bg-blue-800 cursor-pointer  gap-1 rounded   w-[33%] text-lg font-sans font- p-2 font-medium text-white' >Run {params.courseSlug} Online
                             <IoIosArrowForward className='' />
 
                         </div>
 
                     </div>
 
-                    <h1 className='font-sans font-bold text-xl text-blue-950 '>2. Install Python on Your computer.</h1>
+                    <h1 className='font-sans font-bold text-xl text-blue-950 '>2. Install {params.courseSlug} on Your computer.</h1>
                     <p className='font-sans text-xl  font-normal  text-blue-950'>Once you start writing complex programs and creating projects, you should <br />
 
-                        definitely install Python on your computer. This is especially necessary when you <br /> are working with projects that involve multiple files and folders.</p>
-                    <p className='font-sans text-xl  font-normal  text-blue-950'>To install Python on your device, you can use this guide.</p>
+                        definitely install {params.courseSlug} on your computer. This is especially necessary when you <br /> are working with projects that involve multiple files and folders.</p>
+                    <p className='font-sans text-xl  font-normal  text-blue-950'>To install {params.courseSlug} on your device, you can use this guide.</p>
                     <div className='flex flex-1 border rounded  '>
                         <div className='flex flex-[0.9] rounded h-[35vh] '>
-                            <img src="/learn-python.png" alt="" className='object-cover w-full' />
+                            <img src="/learn-{params.courseSlug}.png" alt="" className='object-cover w-full' />
                         </div>
                         <div className='flex flex-col gap-5 flex-1 h-[35vh]  p-5'>
-                            <h1 className='font-sans font-bold text-2xl text-blue-950 '>Getting Started with Python</h1>
-                            <p className='font-sans text-xl  font-normal  text-blue-950'>Learn how you can install and use <br />Python on your own computer.</p>
+                            <h1 className='font-sans font-bold text-2xl text-blue-950 '>Getting Started with {params.courseSlug}</h1>
+                            <p className='font-sans text-xl  font-normal  text-blue-950'>Learn how you can install and use <br />{params.courseSlug} on your own computer.</p>
                             <div className=' bg-blue-600 flex justify-center items-center hover:bg-blue-800 cursor-pointer  gap-1 rounded    text-lg font-sans font- p-2 font-medium text-white' >Learn more
                                 <IoIosArrowForward className='' />
 
