@@ -5,8 +5,6 @@ import React from 'react'
 
 const CourseCalling = async () => {
   Connect();
-
-
   const course = await Course.find({});
   const handleDelete = async (formData) => {
     "use server"
